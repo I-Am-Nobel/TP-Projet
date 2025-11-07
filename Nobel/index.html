@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Master 1 Génie Informatique — UAC</title>
+  <meta name="description" content="Master 1 Génie Informatique à l'Université de l'Assomption Au Congo — Parcours, admissions, débouchés et contact." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Petite personnalisation */
+    .hero-bg { background-image: linear-gradient(90deg, rgba(14,165,233,0.06), rgba(99,102,241,0.04)); }
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- Navbar -->
+  <header class="bg-white/80 sticky top-0 z-40 backdrop-blur-md border-b">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=80&auto=format&fit=crop&crop=faces" alt="logo" class="w-12 h-12 rounded-full object-cover"/>
+        <div>
+          <h1 class="text-lg font-bold">Master 1 — Génie Informatique</h1>
+          <p class="text-xs text-slate-500">Université de l'Assomption Au Congo</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#parcours" class="hover:text-indigo-600">Parcours</a>
+        <a href="#admission" class="hover:text-indigo-600">Admission</a>
+        <a href="#debouches" class="hover:text-indigo-600">Débouchés</a>
+        <a href="#equipe" class="hover:text-indigo-600">Équipe</a>
+        <a href="#contact" class="btn-primary px-4 py-2 rounded-md bg-indigo-600 text-white shadow">Candidater</a>
+      </nav>
+
+      <button id="burger" class="md:hidden p-2 rounded-md focus:ring">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <div class="flex flex-col p-4 gap-2">
+        <a href="#parcours">Parcours</a>
+        <a href="#admission">Admission</a>
+        <a href="#debouches">Débouchés</a>
+        <a href="#equipe">Équipe</a>
+        <a href="#contact" class="inline-block mt-2 px-4 py-2 rounded-md bg-indigo-600 text-white">Candidater</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg py-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">Master 1 Génie Informatique<br class="hidden md:inline"/> à l'UAC</h2>
+        <p class="mt-4 text-slate-600">Préparez-vous à devenir un ingénieur capable de concevoir, développer et piloter des systèmes logiciels et embarqués modernes. Programme axé sur l'IA, systèmes embarqués, réseaux et sécurité.</p>
+
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start gap-3"><span class="font-bold text-indigo-600">✓</span> Parcours pratique et projets réels</li>
+          <li class="flex items-start gap-3"><span class="font-bold text-indigo-600">✓</span> Encadrement par des enseignants-chercheurs</li>
+          <li class="flex items-start gap-3"><span class="font-bold text-indigo-600">✓</span> Partenariats industriels locaux</li>
+        </ul>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#admission" class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium shadow">Postuler</a>
+          <a href="#parcours" class="px-6 py-3 rounded-lg border border-indigo-600 text-indigo-600">Voir le programme</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Etudiants informatique" class="w-full h-64 md:h-80 object-cover"/>
+        </div>
+        <div class="glass p-4 rounded-xl mt-4 shadow-sm">
+          <h3 class="font-semibold">Prochaine session</h3>
+          <p class="text-sm text-slate-600">Septembre — Rentrée académique 2026</p>
+          <div class="mt-3 text-sm">Durée : 1 an (60 ECTS) • Langue : Français</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parcours / Programme -->
+  <section id="parcours" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold">Parcours & Programme</h2>
+    <p class="mt-2 text-slate-600">Le Master 1 est structuré autour de modules fondamentaux, approfondissements et un projet tutoré.</p>
+
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h4 class="font-semibold">Fondamentaux</h4>
+        <ul class="mt-3 text-sm space-y-2 text-slate-600">
+          <li>Algorithmique avancée</li>
+          <li>Structures de données</li>
+          <li>Systèmes d'exploitation</li>
+          <li>Architecture des ordinateurs</li>
+        </ul>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h4 class="font-semibold">Approfondissements</h4>
+        <ul class="mt-3 text-sm space-y-2 text-slate-600">
+          <li>Intelligence artificielle & apprentissage automatique</li>
+          <li>Réseaux et sécurité</li>
+          <li>Systèmes embarqués</li>
+          <li>Développement web avancé</li>
+        </ul>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h4 class="font-semibold">Projet & Stage</h4>
+        <p class="mt-3 text-sm text-slate-600">Projet tutoré en équipe + stage professionnel (minimum 8 semaines).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admission" class="bg-white py-12 border-t">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-xl font-bold">Conditions d'admission</h3>
+        <ul class="mt-4 list-disc pl-5 text-slate-600 space-y-2">
+          <li>Diplôme : Licence en Informatique ou équivalent.</li>
+          <li>Dossier académique et lettre de motivation.</li>
+          <li>Test de sélection / entretien technique.</li>
+        </ul>
+
+        <h4 class="mt-6 font-semibold">Documents requis</h4>
+        <ol class="mt-2 text-slate-600 pl-5 list-decimal space-y-1">
+          <li>Certificat de diplôme et relevés de notes</li>
+          <li>Copie de la carte d'identité ou passeport</li>
+          <li>Lettre de motivation</li>
+          <li>CV et tout document utile</li>
+        </ol>
+      </div>
+
+      <div class="p-6 bg-slate-50 rounded-xl shadow">
+        <h4 class="font-semibold">Candidature rapide</h4>
+        <form id="applyForm" class="mt-4 space-y-3">
+          <input type="text" id="name" placeholder="Nom complet" class="w-full p-3 rounded-md border" required />
+          <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-md border" required />
+          <select id="diploma" class="w-full p-3 rounded-md border">
+            <option>Licence en Informatique</option>
+            <option>Licence en Génie Électrique</option>
+            <option>Autre</option>
+          </select>
+          <textarea id="motivation" rows="4" placeholder="Brève motivation" class="w-full p-3 rounded-md border"></textarea>
+          <div class="flex gap-3">
+            <button type="submit" class="px-4 py-2 rounded-md bg-indigo-600 text-white">Envoyer</button>
+            <button type="button" id="clearBtn" class="px-4 py-2 rounded-md border">Effacer</button>
+          </div>
+          <p id="formMsg" class="text-sm text-green-600 hidden">Candidature envoyée (simulation)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Débouchés -->
+  <section id="debouches" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold">Débouchés & carrières</h2>
+    <p class="mt-2 text-slate-600">Nos diplômés travaillent comme ingénieurs logiciels, architectes systèmes, chercheurs, chefs de projet et entrepreneurs dans divers secteurs.</p>
+
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="p-4 bg-white rounded-lg text-center shadow">
+        <h4 class="font-semibold">Développement logiciel</h4>
+        <p class="text-sm text-slate-600">Full-stack, backend, mobile.</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg text-center shadow">
+        <h4 class="font-semibold">Systèmes embarqués</h4>
+        <p class="text-sm text-slate-600">IoT, robotique, électronique embarquée.</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg text-center shadow">
+        <h4 class="font-semibold">Réseaux & sécurité</h4>
+        <p class="text-sm text-slate-600">Sécurité informatique, administration réseau.</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg text-center shadow">
+        <h4 class="font-semibold">Recherche & enseignement</h4>
+        <p class="text-sm text-slate-600">Doctorat, laboratoires, enseignement supérieur.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section id="equipe" class="bg-slate-50 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold">Équipe pédagogique</h2>
+      <p class="mt-2 text-slate-600">Enseignants-chercheurs et experts invités.</p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="p-4 bg-white rounded-lg text-center shadow">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" class="w-24 h-24 rounded-full mx-auto object-cover" alt="prof"/>
+          <h5 class="mt-3 font-semibold">Pr. Jean Mbemba</h5>
+          <p class="text-sm text-slate-500">Responsable du Master</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg text-center shadow">
+          <img src="https://images.unsplash.com/photo-1545996124-1b5f2d6f0a4b?q=80&w=400&auto=format&fit=crop" class="w-24 h-24 rounded-full mx-auto object-cover" alt="prof"/>
+          <h5 class="mt-3 font-semibold">Dr. Aline Kunda</h5>
+          <p class="text-sm text-slate-500">IA & ML</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg text-center shadow">
+          <img src="https://images.unsplash.com/photo-1544005311-2c9f5d1a1b9a?q=80&w=400&auto=format&fit=crop" class="w-24 h-24 rounded-full mx-auto object-cover" alt="prof"/>
+          <h5 class="mt-3 font-semibold">Dr. Paul L.</h5>
+          <p class="text-sm text-slate-500">Réseaux & Sécurité</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg text-center shadow">
+          <img src="https://images.unsplash.com/photo-1544005312-7d3b1b5b8f2c?q=80&w=400&auto=format&fit=crop" class="w-24 h-24 rounded-full mx-auto object-cover" alt="prof"/>
+          <h5 class="mt-3 font-semibold">Ing. Marie K.</h5>
+          <p class="text-sm text-slate-500">Systèmes embarqués</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="bg-white border-t py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-bold">Contact</h4>
+        <p class="mt-2 text-sm text-slate-600">Université de l'Assomption Au Congo<br/>Faculté des Sciences — Département Informatique</p>
+        <p class="mt-3 text-sm">Email: masterinfo@uac.cd | Tél: +243 99 000 0000</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold">Localisation</h4>
+        <p class="mt-2 text-sm text-slate-600">Kinshasa — Campus principal</p>
+        <div class="mt-3 w-full h-36 bg-slate-100 rounded-md flex items-center justify-center text-sm text-slate-400">Carte (à intégrer)</div>
+      </div>
+
+      <div>
+        <h4 class="font-bold">Envoyer un message</h4>
+        <form id="contactForm" class="mt-3 space-y-3">
+          <input type="text" id="c_name" placeholder="Nom" class="w-full p-2 rounded-md border" required />
+          <input type="email" id="c_email" placeholder="Email" class="w-full p-2 rounded-md border" required />
+          <textarea id="c_msg" rows="3" placeholder="Message" class="w-full p-2 rounded-md border"></textarea>
+          <div class="flex gap-3">
+            <button type="submit" class="px-3 py-2 rounded-md bg-indigo-600 text-white">Envoyer</button>
+            <button type="reset" class="px-3 py-2 rounded-md border">Effacer</button>
+          </div>
+          <p id="contactMsg" class="text-sm text-green-600 hidden">Message envoyé (simulation)</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center text-xs text-slate-500">© <span id="year"></span> Université de l'Assomption Au Congo — Master 1 Génie Informatique. Tous droits réservés.</div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Apply form simulation
+    const applyForm = document.getElementById('applyForm');
+    const formMsg = document.getElementById('formMsg');
+    const clearBtn = document.getElementById('clearBtn');
+    applyForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMsg.classList.remove('hidden');
+      setTimeout(() => { formMsg.classList.add('hidden'); applyForm.reset(); }, 2500);
+    });
+    clearBtn.addEventListener('click', () => applyForm.reset());
+
+    // Contact form simulation
+    const contactForm = document.getElementById('contactForm');
+    const contactMsg = document.getElementById('contactMsg');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactMsg.classList.remove('hidden');
+      setTimeout(() => { contactMsg.classList.add('hidden'); contactForm.reset(); }, 2500);
+    });
+  </script>
+</body>
+</html>
